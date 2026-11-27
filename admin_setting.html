@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Settings</title>
+
+    <link rel="stylesheet" href="admin_setting.css">
+</head>
+
+<body>
+
+    <main class="settings-page">
+
+        <div class="settings-header">
+            <h1>Admin Settings</h1>
+            <p>Manage your admin account.</p>
+        </div>
+
+        <!-- CHANGE ADMIN ID -->
+        <section class="setting-box">
+
+            <h2>Change Admin ID</h2>
+
+            <input type="text" id="nwAdminId" placeholder="Enter new admin ID">
+
+            <input type="password" id="currentPasswordForId" placeholder="Enter current password">
+
+            <button id="changeAdminIdButton">
+                Change Admin ID
+            </button>
+
+            <p id="adminIdMessage"></p>
+
+        </section>
+
+
+        <!-- CHANGE PASSWORD -->
+        <section class="setting-box">
+
+            <h2>Change Password</h2>
+
+            <input type="password" id="currentPassword" placeholder="Current password">
+
+            <input type="password" id="newPassword" placeholder="New password">
+
+            <input type="password" id="confirmPassword" placeholder="Confirm new password">
+
+            <button id="changePasswordButton">
+                Change Password
+            </button>
+
+            <p id="passwordMessage"></p>
+
+        </section>
+
+    </main>
+
+    <script src="admin_setting.js"></script>
+
+</body>
+
+</html>

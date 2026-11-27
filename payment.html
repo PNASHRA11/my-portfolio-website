@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <section class="payment-page">
+        <div class="payment-container">
+            <div class="payment-header">
+                <p class="small-text">PROJECT PAYMENT</p>
+                <h1>Complete Your Payment</h1>
+                <p>Securely manage your project payment, payment status and remaining balance.</p>
+            </div>
+            <!-- PROJECT INFORMATION-->
+            <div class="payment-card">
+                <h2>Project Details</h2>
+                <div class="payment-info">
+                    <div><span>Client : </span><strong id="clientName">Loading...</div>
+                    <div><span>Project : </span><strong id="projectName">Loading...</strong></div>
+                    <div><span>Lead Number : </span><strong id="leadNumber">Loading...</strong>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PAYMENT SUMMARY -->
+            <div class="payment-card">
+                <h2>Payment summary</h2>
+                <div class="amount-row">
+                    <span>Total Project</span>
+                    <strong id="totalAmount">₹0</strong>
+                </div>
+                <div class="amount-row">
+                    <span>Paid Amount</span>
+                    <strong id="paidAmount">₹0</strong>
+                </div>
+                <div class="amount-row"><span>Remaining Amount</span><strong id="remainingAmount">₹0</strong></div>
+
+            </div>
+
+            <!-- PAYMENT STATUS -->
+            <div class="payment-card">
+                <h2>Payment Status</h2>
+                <div id="paymentStatus" class="payment-status">
+                    Checking payment status...
+                </div>
+                <div id="orderStatus" class="order-status">
+                    Checking order status...
+                </div>
+            </div>
+            <!-- PAYMENT ACTION -->
+            <div class="payment-card payment-action">
+                <h2 id="paymentTitle">Payment required</h2>
+                <p id="paymentMessage">Checking your payment details...</p>
+                <div class="pay-amount" id="payAmount">₹0</div>
+                <button id="paymentButton" class="payment-button">Loading...</button>
+            </div>
+            <!-- PAYMENT HISTORY -->
+            <div class="payment-card">
+                <h2>Payment History</h2>
+                <div id="paymentHistory">
+                    <p>No payment history available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="payment.js"></script>
+</body>
+
+</html>

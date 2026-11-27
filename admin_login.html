@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #111;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 35px;
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .login-box h1 {
+            margin: 0 0 10px;
+            font-size: 30px;
+        }
+
+        .login-box p {
+            color: #777;
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #111;
+        }
+
+        .password-wrapper {
+            display: flex;
+            gap: 8px;
+        }
+
+        .password-wrapper input {
+            flex: 1;
+        }
+
+        .password-wrapper button {
+            padding: 0 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #111;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #333;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 18px;
+            text-align: center;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            margin-top: 15px;
+            color: #c62828;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>Admin Login</h1>
+        <p>Login to manage your portfolio Dashboard.</p>
+        <form action="" id="adminLoginForm">
+            <div class="form-group">
+                <label for="adminUsername">Username</label>
+                <input type="text" id="adminUsername" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="adminPassword" placeholder="Enter password" required>
+
+                    <button type="button" id="togglePassword">Show</button>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div id="loginError" class="error-message"></div>
+        </form>
+        <a href="#" class="forgot-password" id="forgotPassword">Forgot Password</a>
+        <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
+    </div>
+
+    <script src="admin-login.js"></script>
+</body>
+
+</html>

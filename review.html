@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client review</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <main class="admin-page">
+        <a href="admin.html" class="admin-nav-btn"> Back to Dashboard</a>
+
+        <h1>Client Reviews</h1>
+        <p>Manage submitted reviews. Approve reviews to publish them on the index page.</p>
+
+        <div class="review-toolbar">
+            <input type="text" id="reviewSearch" placeholder="Search client, project or review...">
+
+            <select id="reviewStatusFilter">
+                <option value="all">All status</option>
+                <option value="pending">New / Pending</option>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+            </select>
+            <select id="reviewRatingFilter">
+                <option value="all">All Rating</option>
+                <option value="5">5 star</option>
+                <option value="4">4 star</option>
+                <option value="3">3 star</option>
+                <option value="2">2 star</option>
+                <option value="1">1 star</option>
+
+            </select>
+        </div>
+
+        <div id="reviewsContainer">
+            <p>Loading reviews...</p>
+        </div>
+    </main>
+
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

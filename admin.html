@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <!-- ADMIN DASHBOARD -->
+    <section class="admin-dashboard">
+        <p class="small-text">ADMIN PANEL</p>
+        <h1>Admin Dashboard</h1>
+        <div class="admin-header-actions">
+            <a href="admin_leads.html" class="admin-nav-btn">Manage Leads</a>
+
+            <a href="review.html" class="admin-nav-btn">Manage Reviews</a>
+            <button id="settingsButton" class="setting-btn"> Setting</button>
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+        <p>Manage your client leads and project inquiries.</p>
+        <section id="adminSetting" class="admin-setting">
+            <h2>Admin Setting</h2>
+
+            <!-- CHANGE ADMIN ID -->
+            <div class="setting-box">
+                <h3>Change Admin Id</h3>
+                <input type="text" id="newAdminId" placeholder="Enter new admin ID">
+                <input type="password" id="currentPasswordForId" placeholder="Enter current password">
+
+                <button id="changeAdminIdButton">Change Admin ID</button>
+                <p id="adminIdMessage"></p>
+            </div>
+
+            <!-- CHANGE PASSWORD -->
+            <div class="setting-box">
+                <h3>change Password</h3>
+                <input type="password" id="currentPassword" placeholder="currentPassword">
+                <input type="password" id="newPassword" placeholder="New password">
+                <input type="password" id="confirmPassword" placeholder="Confirm new password">
+
+                <button id="changePasswordButton">change Password</button>
+
+                <p id="passwordMessage"></p>
+            </div>
+        </section>
+
+        <!-- TOTAL LEADS -->
+        <div class="admin-summary">
+            <div class="admin-summary-card">
+                <h3 id="totalLeads">0</h3>
+                <p>Total Leads</p>
+            </div>
+        </div>
+
+        <!-- SEARCH LEADS -->
+        <div class="admin-search">
+            <input type="text" id="leadSearch" placeholder="search client, project, budget...">
+        </div>
+        <!-- =====================================================
+     PORTFOLIO PROJECTS
+===================================================== -->
+
+        <section id="portfolioAdmin" class="portfolio-admin">
+            <h2>Portfolio Projects</h2>
+            <p>Add your completed work to your public portfolio.</p>
+            <div class="portfolio-form">
+                <input type="text" id="portfolioProjectName" placeholder="Project Name">
+                <input type="text" id="portfolioProjectType" placeholder="Project Type">
+                <textarea id="portfolioProjectDescription" placeholder="Project Description"></textarea>
+                <input type="text" id="portfolioTechnologies" placeholder="Technologies (HTML, CSS, JavaScript)">
+                <input type="url" id="portfolioImage" placeholder="Project image URL">
+                <input type="url" id="portfolioliveUrl" placeholder="Live Website URL">
+                <input type="url" id="portfolioGithubUrl" placeholder="GitHub URL (optional)">
+
+                <select id="portfolioStatus">
+                    <option value="completed">Completed</option>
+                    <option value="ongoing">Ongoing</option>
+                </select>
+                <label>
+                    <input type="checkbox" id="portfolioFeatured">Featured Project
+                </label>
+                <button id="addPortfolioProject">Add Portfolio Project</button>
+                <button id="cancelPortfolioEdit" type="button" style="display: none;">Cancel Edit</button>
+
+                <p id="portfolioMessage"></p>
+
+            </div>
+            <div id="portfolioProjectsContainer">
+                <p>No portfolio projects found</p>
+            </div>
+        </section>
+
+
+        <!--------------------------------------------------------------------------- CLIENT REVIEWS -------------------- -------------------------------------------------------->
+
+
+
+        <!-- LEADS CONTAINER -->
+
+    </section>
+
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

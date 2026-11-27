@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Management</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <main class="admin-page">
+        <a href="admin.html" class="admin-nav-btn"> Back to Dashboard</a>
+
+        <h1>Lead Management</h1>
+        <p>View and manage all client leads</p>
+
+        <div class="admin-summary">
+            <div class="admin-summary-card">
+                <h3 id="totalLeads">0</h3>
+                <p>Total Leads</p>
+            </div>
+        </div>
+
+        <div class="admin-search">
+            <input type="text" id="leadSearch" placeholder="Search client,project,budget...">
+        </div>
+        <div id="leadsContainer">
+            <p class="no-leads">Loading leads...</p>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
